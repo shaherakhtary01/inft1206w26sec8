@@ -26,3 +26,28 @@ ul {
     padding: 30px;
     border-radius: 20px;
 }
+ h1 {
+    color: darkslategray;
+    border-bottom-style: dotted;
+    border-bottom-width: 10px;
+    border-bottom-color: purple;
+    font-size: 2rem;
+ }
+
+div {
+    color: darkslategray;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+a {
+    color: green;
+}
+
+
+a:hover,
+a:focus {
+  color: darkgreen;
+  text-decoration: none;
+}

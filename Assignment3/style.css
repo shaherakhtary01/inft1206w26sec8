@@ -5,10 +5,18 @@ Date: 18 February 2026
 Information and contacts of Jane Doe
 */
 
-html { 
+html {
   background-color: white;
 }
 
 body {
   font: 1.2em / 1.5 system-ui;
+  padding: 20px;
+  width: 500px;
+  background-color: #efefef;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
+

@@ -20,3 +20,9 @@ body {
   margin-left: auto;
 }
 
+ul {
+    background-color: white;
+    border: solid purple 5px;
+    padding: 30px;
+    border-radius: 20px;
+}

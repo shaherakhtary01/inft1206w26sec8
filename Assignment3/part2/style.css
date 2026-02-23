@@ -30,6 +30,14 @@ a {
     color: #aa6666;
 }
 
+nav ul a {
+    border-style:groove;
+    border-color: #aa6666;
+    border-width: 2px;
+    
+    
+}
+
 /* Layout */
 
 main {

@@ -41,14 +41,16 @@ nav {
 
 nav ul {
   margin: 0;
-  padding: 0;
+  padding: 0 80px;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 0.5em 1em;
+  padding: 1.5em 1em;
 }
 
 .photos {

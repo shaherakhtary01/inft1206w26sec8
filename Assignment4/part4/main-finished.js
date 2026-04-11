@@ -6,6 +6,16 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+// paragraph 
+const para = document.querySelector("p");
+let count = 0;
+
+// resize
+window.addEventListener("resize", () => {
+  width = canvas.width = window.innerWidth;
+  height = canvas.height = window.innerHeight;
+});
+
 // function to generate random number
 
 function random(min, max) {

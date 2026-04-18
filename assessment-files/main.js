@@ -4,17 +4,34 @@ const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
 commentWrapper.style.display = 'none';
+showHideBtn.setAttribute('aria-expanded', 'false');
+showHideBtn.setAttribute('aria-controls', 'comments');
 
 showHideBtn.onclick = function() {
+  toggleComments();
+};
+
+showHideBtn.onkeydown = function(e) {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    toggleComments();
+  }
+};
+
+function toggleComments() {
   let showHideText = showHideBtn.textContent;
+
   if(showHideText === 'Show comments') {
     showHideBtn.textContent = 'Hide comments';
     commentWrapper.style.display = 'block';
+    showHideBtn.setAttribute('aria-expanded', 'true');
   } else {
     showHideBtn.textContent = 'Show comments';
     commentWrapper.style.display = 'none';
+    showHideBtn.setAttribute('aria-expanded', 'false');
   }
-};
+}
+
 
 // functionality for adding a new comment via the comments form
 
